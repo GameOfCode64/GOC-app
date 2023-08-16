@@ -4,6 +4,7 @@ import AppProjectCard from "@/components/AppProjectCard";
 import FigmaProject from "@/components/FigmaProject";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import Projectcard from "@/components/Projectcard";
 import WebProject from "@/components/WebProject";
 import { useState, useEffect } from "react";
@@ -16,6 +17,7 @@ const Homepage = () => {
   }, []);
   return (
     <div className="w-[95%] m-auto h-screen">
+      <Navbar />
       <Hero />
       <div className="mt-8">
         <Projectcard />

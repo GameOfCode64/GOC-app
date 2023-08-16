@@ -45,7 +45,7 @@ const AppProjectCard = () => {
             Tailwind
           </span>
           <span className="bg-cyan-400 text-white rounded-lg text-center py-2">
-            React Native
+            Native
           </span>
           <span className="bg-purple-500 text-white rounded-lg text-center py-2">
             Redux

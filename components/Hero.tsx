@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="inline-block mt-16">
           <motion.div
             {...textVariant}
-            className="w-[300px] border-[1px] border-black bg-navbar px-3 py-2 rounded-3xl flex"
+            className="md:w-[300px] w-full border-[1px] border-black bg-navbar px-3 py-2 rounded-3xl flex"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -58,9 +58,11 @@ const Hero = () => {
               , coding examples, tutorials and much more. All in one place
             </p>
             <div className="mt-8">
-              <Button className="rounded-3xl" variant="papabtn">
-                Join Now!
-              </Button>
+              <Link href="/sign-in">
+                <Button className="rounded-3xl" variant="papabtn">
+                  Join Now!
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

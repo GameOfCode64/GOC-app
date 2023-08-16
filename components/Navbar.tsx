@@ -7,6 +7,7 @@ import * as React from "react";
 import { useTheme } from "next-themes";
 import MobileNav from "./Mob-Nav";
 import { useState, useEffect } from "react";
+import { auth } from "@clerk/nextjs";
 
 const Navbar = () => {
   const [isClient, setIsClient] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const newLocal = theme === "dark";
   return (
-    <div className="md:mt-6  sticky top-0  rounded-xl shadow-lg backdrop-filter backdrop-blur-xl md:w-[95%] w-[100%] m-auto bg-white/20 z-10 md:h-[80px] h-[70px]">
+    <div className="md:mt-6  sticky top-0  rounded-xl shadow-lg backdrop-filter backdrop-blur-xl w-[100%] m-auto bg-white/20 z-10 md:h-[80px] h-[70px]">
       <div className="flex items-center justify-between">
         <div className="md:w-[100px] w-[60px] my-4 mx-6">
           <Link href="/">
@@ -49,7 +50,11 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex  items-center justify-center">
             {newLocal ? (
-              <Button className="" onClick={() => setTheme("light")}>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setTheme("light")}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -66,7 +71,11 @@ const Navbar = () => {
                 </svg>
               </Button>
             ) : (
-              <Button className="" onClick={() => setTheme("dark")}>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setTheme("dark")}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -83,8 +92,8 @@ const Navbar = () => {
                 </svg>
               </Button>
             )}
-            <Link href="">
-              <Button variant="primebtn" size="lg" className=" ml-2">
+            <Link href="/sign-in">
+              <Button variant="primebtn" size="lg" className="ml-2">
                 Sign In
               </Button>
             </Link>

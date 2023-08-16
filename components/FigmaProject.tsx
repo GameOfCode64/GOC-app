@@ -21,13 +21,11 @@ const FigmaProject = () => {
             <div className="w-[15px] cursor-pointer">
               <Image src={figma} alt="figma" />
             </div>
-            <h1 className="text-white font-bold ml-3">
-              Movie App Figma Desing
-            </h1>
+            <h1 className="font-bold ml-3">Movie App Figma Desing</h1>
           </div>
           <Link href="/">
-            <button className="bg-blue-600 px-2 py-1 rounded-lg mt-4">
-              Open in Figma
+            <button className="bg-blue-600 text-white px-2 py-1 rounded-lg mt-4">
+              Open
             </button>
           </Link>
         </div>
@@ -45,13 +43,11 @@ const FigmaProject = () => {
             <div className="w-[15px] cursor-pointer">
               <Image src={figma} alt="figma" />
             </div>
-            <h1 className="text-white font-bold ml-3">
-              Coffee Shop Figma Desing
-            </h1>
+            <h1 className="font-bold ml-3">Coffee Shop Figma Desing</h1>
           </div>
           <Link href="/">
-            <button className="bg-blue-600 px-2 py-1 rounded-lg mt-4">
-              Open in Figma
+            <button className="bg-blue-600 text-white px-2 py-1 rounded-lg mt-4">
+              Open
             </button>
           </Link>
         </div>

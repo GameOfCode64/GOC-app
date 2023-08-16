@@ -123,9 +123,11 @@ const MobileNav = () => {
                 )}
               </div>
               <div className="mt-3 py-2 px-3">
-                <Button variant="primebtn" className="w-full">
-                  Sign in
-                </Button>
+                <Link href="/sign-in">
+                  <Button variant="primebtn" className="w-full">
+                    Sign in
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
